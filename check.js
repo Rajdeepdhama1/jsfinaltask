@@ -11,12 +11,15 @@ function checkt(x) {
         return " Undefined";
     }
     if (x.constructor == Array) {
-        if (x[1].constructor == Object) {
+        if (x[0].constructor == Object) {
             console.log(" array of object :")
         }
         else {
             console.log("array  :");
         }
+        x.map( function(x,i){
+            console.log(x);
+        })
     }
     else if (x.constructor == String) {
         console.log("String :");
